@@ -9,7 +9,7 @@ app.use(bodyParser.json())
 
 //define GET routes
 app.get('/', (req, res) => {
-  res.send('Hello from express updated ')
+  res.send('Hello from express ')
 })
 
 postsRoutes(app)
