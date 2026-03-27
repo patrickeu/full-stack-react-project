@@ -1,8 +1,8 @@
 import { initDatabase } from './db/init.js'
 import { app } from './app.js'
 //initialize environment variables
-// import dotenv from 'dotenv'
-// dotenv.config()
+import dotenv from 'dotenv'
+dotenv.config()
 
 try {
   //init database
