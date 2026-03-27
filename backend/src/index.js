@@ -17,5 +17,5 @@ try {
   console.info(`express server is running on http://localhost:${PORT}`)
 }
 catch (err) {
-  console.error('error connecting to database:    ', err)
+  console.error('error connecting to database:     ', err)
 }
