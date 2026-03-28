@@ -1,13 +1,13 @@
-import { QueryClient, useMutation, useQueryClient } from '@tanstack/react-query'
+import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { useState } from 'react'
 import { createPost } from '../api/posts.js'
 
 export function CreatePost() {
-  // const queryClient = useQueryClient()
   const [title, setTitle] = useState('')
   const [author, setAuthor] = useState('')
   const [contents, setContents] = useState('')
 
+  const queryClient = useQueryClient()
   const createPostMutation = useMutation({
     mutationFn: () => createPost({ title, author, contents }),
     onSuccess: () => queryClient.invalidateQueries(['posts']),
