@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { createPost } from '../api/posts.js'
 
 export function CreatePost() {
-  const queryClient = useQueryClient()
+  // const queryClient = useQueryClient()
   const [title, setTitle] = useState('')
   const [author, setAuthor] = useState('')
   const [contents, setContents] = useState('')
