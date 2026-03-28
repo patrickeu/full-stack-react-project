@@ -9,7 +9,7 @@ app.use(bodyParser.json())
 
 //define GET routes
 app.get('/', (req, res) => {
-  res.send('Hello from express udpate 20156 ')
+  res.send('Hello from express udpate 201567 ')
 })
 
 postsRoutes(app)
