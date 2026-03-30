@@ -5,12 +5,17 @@ import { Post } from './Post.jsx'
 export function PostList({ posts = [] }) {
   return (
     <div>
-      {posts.map((post, index) => (
-        <Fragment key={post._id}>
-          <Post {...post} />
-          <hr />
-        </Fragment>
-      ))}
+      {posts.map(
+        (
+          post,
+          index, // eslint-disable-line no-unused-vars
+        ) => (
+          <Fragment key={post._id}>
+            <Post {...post} />
+            <hr />
+          </Fragment>
+        ),
+      )}
     </div>
   )
 }
