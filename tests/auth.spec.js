@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test'
 
 test('allows sign up and log in', async ({ page }) => {
   const testUser = 'test' + Date.now()
-  await page.goto('http://localhost:5173/')
+  await page.goto('/')
   await page.getByRole('link', { name: 'Sign Up' }).click()
   await page.getByRole('textbox', { name: 'Username:' }).click()
   await page.getByRole('textbox', { name: 'Username:' }).fill(testUser)
