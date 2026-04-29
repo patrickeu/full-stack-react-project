@@ -1,5 +1,6 @@
 import express from 'express'
-import { postsRoutes } from './routes/posts.js'
+import { postRoutes } from './routes/posts.js'
+import { userRoutes } from './routes/users.js'
 import bodyParser from 'body-parser'
 import cors from 'cors'
 
@@ -12,7 +13,8 @@ app.get('/', (req, res) => {
   res.send('Hello from express udpate 120156789 ')
 })
 
-postsRoutes(app)
+postRoutes(app)
+userRoutes(app)
 
 //define routes with a JSON request
 app.use(bodyParser.json())
